@@ -1,0 +1,11 @@
+<p>{{title}}</p>
+<ul>
+    <li *ngFor="let course of courses">
+        {{course}}
+    </li>
+    <button (click)="onClick()" class="btn btn-primary">
+        Save
+    </button>
+   
+</ul>
+<input [(ngModel)]="name" (keyup.enter)="onKeyUp()"/>
